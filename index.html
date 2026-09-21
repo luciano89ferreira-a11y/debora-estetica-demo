@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Débora Souza | Massoterapia & Estética | Candangolândia - Brasília DF</title>
+  <meta name="description" content="Débora Souza Massoterapeuta e Esteticista em Candangolândia e Brasília DF. Massagem relaxante, ventosaterapia, drenagem linfática e massagem modeladora. Atendimentos no espaço e a domicílio." />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts: Cormorant Garamond & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            serif: ['"Cormorant Garamond"', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          },
+          colors: {
+            lotus: {
+              50: '#fdfafd',
+              100: '#f9f2fa',
+              200: '#f2e2f5',
+              300: '#e5caeb',
+              400: '#cf9cda',
+              500: '#af6bc0',
+              600: '#8b4ba0',
+              700: '#6b3b82', // Tom lavanda/púrpura da flor de lótus do perfil
+              800: '#562f68',
+              900: '#472754',
+              950: '#2b1235',
+            },
+            champagne: {
+              DEFAULT: '#d4af37',
+              light: '#f5e8be',
+              dark: '#aa881b'
+            },
+            whats: {
+              DEFAULT: '#25D366',
+              hover: '#1fb855'
+            }
+          },
+          animation: {
+            'float-gentle': 'floatGentle 4s ease-in-out infinite',
+            'pulse-glow': 'pulseGlow 2.2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+          },
+          keyframes: {
+            floatGentle: {
+              '0%, 100%': { transform: 'translateY(0px)' },
+              '50%': { transform: 'translateY(-8px)' },
+            },
+            pulseGlow: {
+              '0%, 100%': { transform: 'scale(1)', opacity: '1' },
+              '50%': { transform: 'scale(1.05)', opacity: '0.92' },
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    .glass-nav {
+      background: rgba(255, 255, 255, 0.94);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+    }
+    .hero-gradient {
+      background: radial-gradient(circle at 85% 15%, #f7eff9 0%, #ffffff 65%);
+    }
+    .card-spa {
+      transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .card-spa:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 18px 30px -10px rgba(107, 59, 130, 0.12), 0 2px 6px 0 rgba(0, 0, 0, 0.04);
+    }
+  </style>
+</head>
+
+<body class="bg-lotus-50 text-gray-800 font-sans antialiased overflow-x-hidden selection:bg-lotus-100 selection:text-lotus-900">
+
+  <!-- Faixa de Destaque -->
+  <div class="bg-lotus-900 text-lotus-100 text-xs py-2 px-4 text-center font-medium tracking-wide">
+    🌸 Cuidando de você, por inteiro · Atendimento no espaço (Candangolândia) ou no conforto da sua casa ·
+    <a href="https://wa.me/5561981040126" target="_blank" rel="noopener noreferrer" class="underline text-champagne-light hover:text-white transition-colors ml-1 font-semibold">
+      Agende seu horário: (61) 98104-0126
+    </a>
+  </div>
+
+  <!-- Cabeçalho Fixo com Navegação -->
+  <header class="sticky top-0 z-40 glass-nav border-b border-lotus-100 transition-all">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Marca Débora Souza -->
+      <a href="#" class="flex items-center gap-3">
+        <div class="w-11 h-11 rounded-2xl bg-gradient-to-tr from-lotus-700 to-lotus-500 text-white flex items-center justify-center text-xl shadow-md shadow-lotus-200">
+          🪷
+        </div>
+        <div>
+          <span class="font-serif text-2xl font-bold tracking-tight text-gray-900 block leading-tight">
+            Débora <span class="text-lotus-700">Souza</span>
+          </span>
+          <span class="text-[10px] uppercase font-bold tracking-widest text-lotus-600">Massoterapia & Estética</span>
+        </div>
+      </a>
+
+      <!-- Menu Desktop -->
+      <nav class="hidden md:flex items-center gap-7 text-sm font-semibold text-gray-600">
+        <a href="#procedimentos" class="hover:text-lotus-700 transition-colors">Procedimentos</a>
+        <a href="#recomendador" class="hover:text-lotus-700 transition-colors">Descubra seu Protocolo</a>
+        <a href="#diferenciais" class="hover:text-lotus-700 transition-colors">Por Que Escolher?</a>
+        <a href="#depoimentos" class="hover:text-lotus-700 transition-colors">Depoimentos</a>
+        <a href="#faq" class="hover:text-lotus-700 transition-colors">Dúvidas</a>
+        <a href="#localizacao" class="hover:text-lotus-700 transition-colors">Onde Atendemos</a>
+      </nav>
+
+      <!-- CTA Header -->
+      <div class="flex items-center gap-3">
+        <a href="https://wa.me/5561981040126?text=Ol%C3%A1%20D%C3%A9bora%21%20Gostaria%20de%20consultar%20os%20hor%C3%A1rios%20dispon%C3%ADveis%20para%20sess%C3%A3o."
+           target="_blank"
+           rel="noopener noreferrer"
+           class="inline-flex items-center gap-2 bg-lotus-700 hover:bg-lotus-800 text-white font-semibold text-xs sm:text-sm px-5 py-2.5 rounded-full shadow-md shadow-lotus-200 transition-all hover:scale-105">
+          <span>Agendar Horário</span>
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+          </svg>
+        </a>
+      </div>
+
+    </div>
+  </header>
+
+  <main>
+    <!-- Seção Hero -->
+    <section class="relative hero-gradient pt-14 pb-20 lg:pt-20 lg:pb-28 overflow-hidden">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          
+          <div class="lg:col-span-7 text-center lg:text-left">
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-lotus-100 border border-lotus-200 text-lotus-800 text-xs font-semibold mb-6">
+              <span>✨</span>
+              <span>Candangolândia & Atendimentos em Domicílio</span>
+            </div>
+
+            <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-950 leading-[1.15] mb-6">
+              Alívio imediato para suas tensões, renovação para sua <span class="italic text-lotus-700 font-semibold">autoestima</span>.
+            </h1>
+
+            <p class="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto lg:mx-0 mb-8 leading-relaxed">
+              Técnicas manuais personalizadas, ventosaterapia para alívio muscular e protocolos estéticos pensados para devolver a leveza ao seu corpo e serenidade à sua mente.
+            </p>
+
+            <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 mb-10">
+              <a href="https://wa.me/5561981040126?text=Ol%C3%A1%20D%C3%A9bora%21%20Gostaria%20de%20marcar%20uma%20sess%C3%A3o%20de%20massoterapia."
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 bg-whats hover:bg-whats-hover text-white font-bold px-8 py-4 rounded-2xl shadow-lg shadow-green-200 transition-all hover:-translate-y-0.5">
+                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                  <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+                </svg>
+                <span>Conversar no WhatsApp</span>
+              </a>
+
+              <a href="#recomendador"
+                 class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-white hover:bg-lotus-100 text-gray-800 border border-lotus-200 font-semibold px-6 py-4 rounded-2xl transition-all">
+                <span>Qual o protocolo ideal pra mim?</span>
+              </a>
+            </div>
+
+            <!-- Métricas Rápidas -->
+            <div class="grid grid-cols-3 gap-4 pt-6 border-t border-lotus-200/80">
+              <div>
+                <p class="font-serif text-2xl font-bold text-lotus-700">100%</p>
+                <p class="text-xs text-gray-500 font-medium">Atendimento humanizado</p>
+              </div>
+              <div class="border-l border-lotus-200 pl-4">
+                <p class="font-serif text-2xl font-bold text-lotus-700">🏠 / 📍</p>
+                <p class="text-xs text-gray-500 font-medium">Espaço ou a Domicílio</p>
+              </div>
+              <div class="border-l border-lotus-200 pl-4">
+                <p class="font-serif text-2xl font-bold text-lotus-700">5.0 ★</p>
+                <p class="text-xs text-gray-500 font-medium">Avaliação máxima Google</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Coluna Visual -->
+          <div class="lg:col-span-5 relative">
+            <div class="relative mx-auto max-w-sm lg:max-w-none">
+              
+              <div class="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
+                <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=900&q=80" 
+                     alt="Massagem terapêutica e relaxamento" 
+                     class="w-full h-[450px] object-cover" />
+                <div class="absolute inset-0 bg-gradient-to-t from-lotus-950/70 via-transparent to-transparent"></div>
+                
+                <div class="absolute bottom-5 left-5 right-5 text-white">
+                  <span class="text-[11px] font-bold tracking-wider uppercase bg-lotus-700/90 backdrop-blur px-3 py-1 rounded-full text-champagne-light">
+                    Ambiente & Equilíbrio
+                  </span>
+                  <p class="font-serif text-xl font-bold mt-2">"Cuidar do seu corpo também é cuidar da sua saúde mental."</p>
+                </div>
+              </div>
+
+              <!-- Card Flutuante 1: Ventosa -->
+              <div class="absolute -top-5 -left-5 bg-white p-3.5 rounded-2xl shadow-xl border border-lotus-100 hidden sm:flex items-center gap-3 animate-float-gentle">
+                <div class="w-10 h-10 rounded-xl bg-lotus-100 text-lotus-700 flex items-center justify-center text-lg font-bold">
+                  🌿
+                </div>
+                <div>
+                  <p class="text-xs font-bold text-gray-900">Ventosaterapia</p>
+                  <p class="text-[11px] text-gray-500">Alívio de dores nas costas</p>
+                </div>
+              </div>
+
+              <!-- Card Flutuante 2: Domicílio -->
+              <div class="absolute -bottom-5 -right-5 bg-white p-4 rounded-2xl shadow-xl border border-lotus-100 hidden sm:flex items-center gap-3">
+                <div class="w-10 h-10 rounded-xl bg-champagne-light text-lotus-900 flex items-center justify-center text-lg font-bold">
+                  ✨
+                </div>
+                <div>
+                  <p class="text-xs font-bold text-gray-900">Atendimento a Domicílio</p>
+                  <p class="text-[11px] text-lotus-700 font-semibold">Candangolândia & Região</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Procedimentos Realizados -->
+    <section id="procedimentos" class="py-20 bg-white border-y border-lotus-100">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-2xl mx-auto mb-16">
+          <span class="text-lotus-700 font-bold text-xs uppercase tracking-widest block mb-2">Protocolos Dedicados</span>
+          <h2 class="font-serif text-3xl sm:text-4xl font-bold text-gray-950">Procedimentos & Terapias</h2>
+          <p class="text-gray-500 text-sm mt-3">Tratamentos manuais desenvolvidos com base nas necessidades individuais do seu corpo.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          
+          <!-- Card 1: Relaxante -->
+          <div class="bg-lotus-50/60 rounded-3xl p-8 border border-lotus-100 card-spa">
+            <div class="w-12 h-12 rounded-2xl bg-lotus-700 text-white flex items-center justify-center text-xl mb-6 shadow-sm">
+              🧘‍♀️
+            </div>
+            <h3 class="font-serif text-2xl font-bold text-gray-900 mb-2">Massagem Relaxante</h3>
+            <p class="text-gray-600 text-sm leading-relaxed mb-6">
+              Manobras suaves e envolventes que reduzem a ansiedade, diminuem a fadiga muscular, combatem a insônia e devolvem a harmonia ao corpo e mente.
+            </p>
+            <a href="https://wa.me/5561981040126?text=Ol%C3%A1%20D%C3%A9bora%21%20Gostaria%20de%20agendar%20uma%20Massagem%20Relaxante." 
+               target="_blank" 
+               class="inline-flex items-center text-xs font-bold text-lotus-700 hover:text-lotus-900">
+              Consultar disponibilidade &rarr;
+            </a>
+          </div>
+
+          <!-- Card 2: Ventosaterapia -->
+          <div class="bg-lotus-50/60 rounded-3xl p-8 border border-lotus-100 card-spa">
+            <div class="w-12 h-12 rounded-2xl bg-lotus-700 text-white flex items-center justify-center text-xl mb-6 shadow-sm">
+              🏮
+            </div>
+            <h3 class="font-serif text-2xl font-bold text-gray-900 mb-2">Terapêutica com Ventosa</h3>
+            <p class="text-gray-600 text-sm leading-relaxed mb-6">
+              Liberação miofascial e aplicação de ventosas para estimular o fluxo sanguíneo e oxigenar a musculatura, indicada especialmente para tensões na coluna, lombar e ombros.
+            </p>
+            <a href="https://wa.me/5561981040126?text=Ol%C3%A1%20D%C3%A9bora%21%20Gostaria%20de%20saber%20mais%20sobre%20a%20Ventosaterapia." 
+               target="_blank" 
+               class="inline-flex items-center text-xs font-bold text-lotus-700 hover:text-lotus-900">
+              Aliviar minhas dores &rarr;
+            </a>
+          </div>
+
+          <!-- Card 3: Drenagem Linfática -->
+          <div class="bg-lotus-50/60 rounded-3xl p-8 border border-lotus-100 card-spa">
+            <div class="w-12 h-12 rounded-2xl bg-lotus-700 text-white flex items-center justify-center text-xl mb-6 shadow-sm">
+              💧
+            </div>
+            <h3 class="font-serif text-2xl font-bold text-gray-900 mb-2">Drenagem Linfática</h3>
+            <p class="text-gray-600 text-sm leading-relaxed mb-6">
+              Estímulo preciso ao sistema linfático para eliminação de líquidos e toxinas retidas. Reduz o inchaço, ativa a circulação e proporciona leveza corporal imediata.
+            </p>
+            <a href="https://wa.me/5561981040126?text=Ol%C3%A1%20D%C3%A9bora%21%20Quero%20agendar%20uma%20Drenagem%20Linf%C3%A1tica." 
+               target="_blank" 
+               class="inline-flex items-center text-xs font-bold text-lotus-700 hover:text-lotus-900">
+              Reduzir retenção &rarr;
+            </a>
+          </div>
+
+          <!-- Card 4: Modeladora -->
+          <div class="bg-lotus-50/60 rounded-3xl p-8 border border-lotus-100 card-spa">
+            <div class="w-12 h-12 rounded-2xl bg-lotus-700 text-white flex items-center justify-center text-xl mb-6 shadow-sm">
+              ✨
+            </div>
+            <h3 class="font-serif text-2xl font-bold text-gray-900 mb-2">Massagem Modeladora</h3>
+            <p class="text-gray-600 text-sm leading-relaxed mb-6">
+              Movimentos firmes e rápidos focados em contorno corporal, melhora do tônus da pele, circulação local e atenuação da aparência de celulite.
+            </p>
+            <a href="https://wa.me/5561981040126?text=Ol%C3%A1%20D%C3%A9bora%21%20Gostaria%20de%20informa%C3%A7%C3%B5es%20da%20Massagem%20Modeladora." 
+               target="_blank" 
+               class="inline-flex items-center text-xs font-bold text-lotus-700 hover:text-lotus-900">
+              Conhecer protocolo &rarr;
+            </a>
+          </div>
+
+          <!-- Card 5: Facial -->
+          <div class="bg-lotus-50/60 rounded-3xl p-8 border border-lotus-100 card-spa">
+            <div class="w-12 h-12 rounded-2xl bg-lotus-700 text-white flex items-center justify-center text-xl mb-6 shadow-sm">
+              🌸
+            </div>
+            <h3 class="font-serif text-2xl font-bold text-gray-900 mb-2">Massagem Facial & Revitalização</h3>
+            <p class="text-gray-600 text-sm leading-relaxed mb-6">
+              Ativa a circulação do rosto, relaxa músculos da face contraídos por estresse, drena edemas e promove viço natural e tonificação das linhas de expressão.
+            </p>
+            <a href="https://wa.me/5561981040126?text=Ol%C3%A1%20D%C3%A9bora%21%20Gostaria%20de%20agendar%20uma%20Massagem%20Facial." 
+               target="_blank" 
+               class="inline-flex items-center text-xs font-bold text-lotus-700 hover:text-lotus-900">
+              Cuidar do meu rosto &rarr;
+            </a>
+          </div>
+
+          <!-- Card 6: Home Care -->
+          <div class="bg-gradient-to-br from-lotus-700 to-lotus-900 text-white rounded-3xl p-8 shadow-md flex flex-col justify-between">
+            <div>
+              <div class="w-12 h-12 rounded-2xl bg-white/20 text-white flex items-center justify-center text-xl mb-6">
+                🏠
+              </div>
+              <h3 class="font-serif text-2xl font-bold mb-2">Atendimento a Domicílio</h3>
+              <p class="text-lotus-100 text-sm leading-relaxed">
+                Toda a comodidade de receber o protocolo na sua residência com maca portátil, lençóis esterilizados e atmosfera de relaxamento sem trânsito.
+              </p>
+            </div>
+            <div class="pt-6">
+              <a href="https://wa.me/5561981040126?text=Ol%C3%A1%20D%C3%A9bora%21%20Gostaria%20de%20saber%20como%20funciona%20o%20atendimento%20a%20domic%C3%ADlio." 
+                 target="_blank" 
+                 class="inline-flex items-center gap-2 bg-white text-lotus-900 font-bold text-xs px-5 py-3 rounded-xl hover:bg-champagne-light transition-all">
+                <span>Consultar bairros atendidos</span>
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Recomendador Interativo de Protocolos -->
+    <section id="recomendador" class="py-20 bg-lotus-100/50">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="bg-white rounded-3xl p-8 sm:p-12 border border-lotus-200 shadow-xl">
+          <div class="text-center max-w-xl mx-auto mb-8">
+            <span class="text-lotus-700 font-bold text-xs uppercase tracking-widest block mb-1">Guia de Escolha</span>
+            <h2 class="font-serif text-3xl font-bold text-gray-900">Qual é a sua necessidade hoje?</h2>
+            <p class="text-gray-500 text-sm mt-2">Clique na sua sensação atual para recomendarmos o melhor tratamento:</p>
+          </div>
+
+          <!-- Botões de Seleção de Objetivo -->
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-8">
+            <button onclick="setQuiz('dor')" id="btn-dor" class="quiz-btn p-4 rounded-2xl border-2 border-lotus-700 bg-lotus-50 text-lotus-900 font-bold text-sm text-center transition-all flex flex-col items-center gap-1">
+              <span class="text-2xl">⚡</span>
+              <span>Dores & Tensões</span>
+              <span class="text-[11px] font-normal text-gray-500">Ombros, pescoço e lombar</span>
+            </button>
+            <button onclick="setQuiz('inchaco')" id="btn-inchaco" class="quiz-btn p-4 rounded-2xl border border-gray-200 hover:border-lotus-300 text-gray-700 font-bold text-sm text-center transition-all flex flex-col items-center gap-1">
+              <span class="text-2xl">🌊</span>
+              <span>Inchaço & Retenção</span>
+              <span class="text-[11px] font-normal text-gray-500">Pernas pesadas ou pós-cirúrgico</span>
+            </button>
+            <button onclick="setQuiz('relax')" id="btn-relax" class="quiz-btn p-4 rounded-2xl border border-gray-200 hover:border-lotus-300 text-gray-700 font-bold text-sm text-center transition-all flex flex-col items-center gap-1">
+              <span class="text-2xl">🕯️</span>
+              <span>Estresse & Cansaço</span>
+              <span class="text-[11px] font-normal text-gray-500">Mente acelerada e insônia</span>
+            </button>
+          </div>
+
+          <!-- Resultado Dinâmico do Recomendador -->
+          <div id="quiz-result" class="p-6 rounded-2xl bg-lotus-50 border border-lotus-200 text-center">
+            <span class="inline-block text-xs uppercase font-bold tracking-wider text-lotus-700 bg-white px-3 py-1 rounded-full shadow-sm mb-2">Protocolo Sugerido</span>
+            <h3 id="result-title" class="font-serif text-2xl font-bold text-gray-950 mb-2">Ventosaterapia + Massagem Terapêutica</h3>
+            <p id="result-desc" class="text-gray-600 text-sm max-w-lg mx-auto mb-5">
+              Ideal para quem passa muitas horas sentado ou sob estresse contínuo. As ventosas oxigenam os nódulos musculares e destravam a região dorsal e cervical.
+            </p>
+            <a id="result-link" href="https://wa.me/5561981040126?text=Ol%C3%A1%20D%C3%A9bora%21%20Fiz%20o%20teste%20no%20site%20e%20o%20protocolo%20sugerido%20foi%20Ventosaterapia%20e%20Massagem%20Terap%C3%AAutica."
+               target="_blank"
+               class="inline-flex items-center gap-2 bg-lotus-700 hover:bg-lotus-800 text-white font-bold text-sm px-6 py-3 rounded-xl shadow transition-all">
+              <span>Agendar este protocolo com a Débora</span>
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+              </svg>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Depoimentos -->
+    <section id="depoimentos" class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-xl mx-auto mb-14">
+          <span class="text-lotus-700 font-bold text-xs uppercase tracking-widest block mb-1">Avaliações Reais</span>
+          <h2 class="font-serif text-3xl font-bold text-gray-950">A experiência de quem já cuidou do corpo</h2>
+          <div class="flex items-center justify-center gap-1 text-champagne text-lg mt-2">
+            ★★★★★ <span class="text-xs text-gray-500 font-semibold ml-1">(5.0 no Google)</span>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          
+          <div class="p-6 rounded-2xl bg-lotus-50/50 border border-lotus-100 flex flex-col justify-between">
+            <p class="text-sm text-gray-600 italic leading-relaxed mb-4">
+              "Estava com uma dor na lombar insuportável por trabalhar o dia todo no computador. A sessão de ventosa com a Débora me destravou totalmente no mesmo dia. Mão maravilhosa!"
+            </p>
+            <div class="flex items-center gap-3 pt-3 border-t border-lotus-100">
+              <div class="w-8 h-8 rounded-full bg-lotus-200 text-lotus-800 flex items-center justify-center font-bold text-xs">C</div>
+              <div>
+                <p class="text-xs font-bold text-gray-900">Camila R.</p>
+                <p class="text-[10px] text-gray-500">Candangolândia - DF</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-6 rounded-2xl bg-lotus-50/50 border border-lotus-100 flex flex-col justify-between">
+            <p class="text-sm text-gray-600 italic leading-relaxed mb-4">
+              "A praticidade do atendimento a domicílio foi o ponto alto pra mim. Ela é super pontual, traz todo o material higienizado e a drenagem fez meu inchaço diminuir visivelmente."
+            </p>
+            <div class="flex items-center gap-3 pt-3 border-t border-lotus-100">
+              <div class="w-8 h-8 rounded-full bg-lotus-200 text-lotus-800 flex items-center justify-center font-bold text-xs">J</div>
+              <div>
+                <p class="text-xs font-bold text-gray-900">Juliana M.</p>
+                <p class="text-[10px] text-gray-500">Recanto das Emas - DF</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-6 rounded-2xl bg-lotus-50/50 border border-lotus-100 flex flex-col justify-between">
+            <p class="text-sm text-gray-600 italic leading-relaxed mb-4">
+              "Profissional muito atenciosa e ambiente impecável. A massagem facial revitalizou minha pele e tirou todo o peso do cansaço do rosto. Indico de olhos fechados!"
+            </p>
+            <div class="flex items-center gap-3 pt-3 border-t border-lotus-100">
+              <div class="w-8 h-8 rounded-full bg-lotus-200 text-lotus-800 flex items-center justify-center font-bold text-xs">P</div>
+              <div>
+                <p class="text-xs font-bold text-gray-900">Patrícia S.</p>
+                <p class="text-[10px] text-gray-500">Brasília - DF</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FAQ Accordion -->
+    <section id="faq" class="py-20 bg-lotus-50/60 border-t border-lotus-100">
+      <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center mb-12">
+          <span class="text-lotus-700 font-bold text-xs uppercase tracking-widest block mb-1">Dúvidas Frequentes</span>
+          <h2 class="font-serif text-3xl font-bold text-gray-950">Perguntas Comuns</h2>
+          <p class="text-gray-500 text-sm mt-1">Tudo o que você precisa saber antes da sua primeira sessão</p>
+        </div>
+
+        <div class="space-y-3">
+          
+          <div class="border border-lotus-200 bg-white rounded-2xl overflow-hidden">
+            <button class="w-full text-left p-5 flex items-center justify-between font-bold text-gray-900 text-sm sm:text-base" onclick="toggleFaq('faq-1', 'icon-1')">
+              <span>Como funciona o atendimento em domicílio?</span>
+              <span id="icon-1" class="text-lotus-700 text-xl font-bold">−</span>
+            </button>
+            <div id="faq-1" class="p-5 pt-0 text-sm text-gray-600 leading-relaxed">
+              Levamos toda a estrutura até você: maca profissional, lençóis descartáveis, óleos essenciais e toalhas esterilizadas. Você só precisa separar um espaço arejado e tranquilo na sua residência para desfrutar da sessão.
+            </div>
+          </div>
+
+          <div class="border border-lotus-200 bg-white rounded-2xl overflow-hidden">
+            <button class="w-full text-left p-5 flex items-center justify-between font-bold text-gray-900 text-sm sm:text-base" onclick="toggleFaq('faq-2', 'icon-2')">
+              <span>As marcas da ventosaterapia doem? Quanto tempo duram?</span>
+              <span id="icon-2" class="text-lotus-700 text-xl font-bold">+</span>
+            </button>
+            <div id="faq-2" class="hidden p-5 pt-0 text-sm text-gray-600 leading-relaxed">
+              Não doem! As marcas circulares indicam apenas que houve oxigenação e liberação de toxinas na fáscia muscular tencionada. Costumam clarear e desaparecer completamente entre 3 a 7 dias.
+            </div>
+          </div>
+
+          <div class="border border-lotus-200 bg-white rounded-2xl overflow-hidden">
+            <button class="w-full text-left p-5 flex items-center justify-between font-bold text-gray-900 text-sm sm:text-base" onclick="toggleFaq('faq-3', 'icon-3')">
+              <span>É necessário agendamento prévio?</span>
+              <span id="icon-3" class="text-lotus-700 text-xl font-bold">+</span>
+            </button>
+            <div id="faq-3" class="hidden p-5 pt-0 text-sm text-gray-600 leading-relaxed">
+              Sim! Para garantir um atendimento exclusivo e sem pressa para cada cliente, os horários são organizados com antecedência via WhatsApp: <strong>(61) 98104-0126</strong>.
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Onde Estamos e Contato -->
+    <section id="localizacao" class="py-20 bg-white border-t border-lotus-100">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+          
+          <div class="lg:col-span-6 space-y-6">
+            <div>
+              <span class="text-lotus-700 font-bold text-xs uppercase tracking-widest block mb-1">Localização & Contato</span>
+              <h2 class="font-serif text-3xl font-bold text-gray-950">Atendimento acolhedor na Candangolândia</h2>
+              <p class="text-gray-600 text-sm mt-2">
+                Visite nosso espaço físico ou solicite atendimento home care no seu endereço em Brasília.
+              </p>
+            </div>
+
+            <div class="space-y-3.5">
+              <div class="flex items-start gap-4 p-4 rounded-2xl bg-lotus-50 border border-lotus-200">
+                <div class="w-9 h-9 rounded-xl bg-lotus-700 text-white flex items-center justify-center font-bold text-sm flex-shrink-0">
+                  📍
+                </div>
+                <div>
+                  <h4 class="font-bold text-gray-900 text-sm">Endereço do Espaço</h4>
+                  <p class="text-gray-600 text-xs sm:text-sm mt-0.5">QR 1 lote 38 - Candangolândia, Brasília - DF, 71725-107</p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-4 p-4 rounded-2xl bg-lotus-50 border border-lotus-200">
+                <div class="w-9 h-9 rounded-xl bg-lotus-700 text-white flex items-center justify-center font-bold text-sm flex-shrink-0">
+                  🚗
+                </div>
+                <div>
+                  <h4 class="font-bold text-gray-900 text-sm">Área de Atendimento a Domicílio</h4>
+                  <p class="text-gray-600 text-xs sm:text-sm mt-0.5">Candangolândia, Recanto das Emas, Núcleo Bandeirante, Guará e região DF</p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-4 p-4 rounded-2xl bg-lotus-50 border border-lotus-200">
+                <div class="w-9 h-9 rounded-xl bg-lotus-700 text-white flex items-center justify-center font-bold text-sm flex-shrink-0">
+                  📱
+                </div>
+                <div>
+                  <h4 class="font-bold text-gray-900 text-sm">WhatsApp & Redes</h4>
+                  <p class="text-gray-600 text-xs sm:text-sm mt-0.5">WhatsApp: <strong>(61) 98104-0126</strong></p>
+                  <p class="text-lotus-700 text-xs font-semibold mt-0.5">Instagram: @debor_aestetica</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="pt-2 flex flex-col sm:flex-row gap-3">
+              <a href="https://wa.me/5561981040126?text=Ol%C3%A1%20D%C3%A9bora%21%20Gostaria%20de%20consultar%20a%20agenda%20da%20semana." 
+                 target="_blank" 
+                 class="inline-flex items-center justify-center gap-2 bg-whats hover:bg-whats-hover text-white font-bold text-sm px-6 py-3.5 rounded-xl shadow transition-all">
+                <span>Falar no WhatsApp</span>
+              </a>
+              <a href="https://instagram.com/debor_aestetica" 
+                 target="_blank" 
+                 class="inline-flex items-center justify-center gap-2 bg-lotus-700 hover:bg-lotus-800 text-white font-bold text-sm px-6 py-3.5 rounded-xl shadow transition-all">
+                <span>Seguir no Instagram</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="lg:col-span-6">
+            <div class="bg-lotus-50 p-3 sm:p-4 rounded-3xl border border-lotus-200 shadow-lg overflow-hidden">
+              <div class="relative w-full h-80 rounded-2xl overflow-hidden bg-gray-100">
+                <iframe 
+                  title="Mapa Candangolândia QR 1" 
+                  class="w-full h-full border-0" 
+                  loading="lazy" 
+                  allowfullscreen 
+                  referrerpolicy="no-referrer-when-downgrade" 
+                  src="https://maps.google.com/maps?q=QR%201%20lote%2038%20Candangolandia%20Brasilia%20DF&t=&z=16&ie=UTF8&iwloc=&output=embed">
+                </iframe>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-lotus-950 text-lotus-200 py-10 border-t border-lotus-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs">
+      <div class="flex items-center gap-2">
+        <span class="text-base">🪷</span>
+        <span class="font-serif font-bold text-sm text-white">Débora Souza | Massoterapia & Estética</span>
+      </div>
+      <p class="text-lotus-300/70">© 2026 Débora Souza · Candangolândia, Brasília - DF</p>
+      <p class="text-lotus-400 font-medium">Cuidando de você, por inteiro.</p>
+    </div>
+  </footer>
+
+  <!-- Botão Flutuante WhatsApp -->
+  <aside class="fixed bottom-6 right-6 z-50">
+    <a href="https://wa.me/5561981040126?text=Ol%C3%A1%20D%C3%A9bora%21%20Gostaria%20de%20saber%20mais%20sobre%20as%20massagens%20e%20valores."
+       target="_blank"
+       rel="noopener noreferrer"
+       aria-label="Abrir conversa no WhatsApp com Débora Souza"
+       class="group relative flex items-center justify-center w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-whats hover:bg-whats-hover text-white shadow-2xl transition-all duration-300 hover:scale-110 animate-pulse-glow">
+      
+      <span class="absolute right-20 whitespace-nowrap bg-gray-950 text-white text-xs font-semibold px-3 py-1.5 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity shadow pointer-events-none hidden sm:block">
+        Falar com a Débora 💬
+      </span>
+
+      <svg class="w-7 h-7 sm:w-8 sm:h-8 fill-current" viewBox="0 0 24 24">
+        <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+      </svg>
+    </a>
+  </aside>
+
+  <!-- Lógica Interativa JavaScript -->
+  <script>
+    function toggleFaq(contentId, iconId) {
+      const content = document.getElementById(contentId);
+      const icon = document.getElementById(iconId);
+      if (!content || !icon) return;
+
+      const isHidden = content.classList.contains('hidden');
+      if (isHidden) {
+        content.classList.remove('hidden');
+        icon.textContent = '−';
+      } else {
+        content.classList.add('hidden');
+        icon.textContent = '+';
+      }
+    }
+
+    const quizData = {
+      dor: {
+        title: "Ventosaterapia + Massagem Terapêutica",
+        desc: "Ideal para quem passa muitas horas sentado ou sob estresse contínuo. As ventosas oxigenam os nódulos musculares e destravam a região dorsal e cervical.",
+        linkText: "Ol%C3%A1%20D%C3%A9bora%21%20Fiz%20o%20teste%20no%20site%20e%20quero%20agendar%20o%20protocolo%20de%20Ventosaterapia%20e%20Massagem%20Terap%C3%AAutica."
+      },
+      inchaco: {
+        title: "Drenagem Linfática Corporal & Facial",
+        desc: "Recomendado para aliviar sensação de peso nas pernas, retenção hídrica menstrual ou pós-procedimentos. Reduz medidas por desinchaço e revigora a circulação.",
+        linkText: "Ol%C3%A1%20D%C3%A9bora%21%20Fiz%20o%20teste%20no%20site%20e%20quero%20agendar%20uma%20Drenagem%20Linf%C3%A1tica."
+      },
+      relax: {
+        title: "Massagem Relaxante com Aromaterapia",
+        desc: "O refúgio perfeito contra a ansiedade e o esgotamento mental. Manobras suaves com óleos aquecidos que induzem ao sono reparador e relaxamento absoluto.",
+        linkText: "Ol%C3%A1%20D%C3%A9bora%21%20Fiz%20o%20teste%20no%20site%20e%20quero%20agendar%20uma%20Massagem%20Relaxante."
+      }
+    };
+
+    function setQuiz(type) {
+      const btns = ['dor', 'inchaco', 'relax'];
+      btns.forEach(b => {
+        const el = document.getElementById('btn-' + b);
+        if (b === type) {
+          el.className = "quiz-btn p-4 rounded-2xl border-2 border-lotus-700 bg-lotus-50 text-lotus-900 font-bold text-sm text-center transition-all flex flex-col items-center gap-1";
+        } else {
+          el.className = "quiz-btn p-4 rounded-2xl border border-gray-200 hover:border-lotus-300 text-gray-700 font-bold text-sm text-center transition-all flex flex-col items-center gap-1";
+        }
+      });
+
+      const data = quizData[type];
+      document.getElementById('result-title').textContent = data.title;
+      document.getElementById('result-desc').textContent = data.desc;
+      document.getElementById('result-link').href = `https://wa.me/5561981040126?text=${data.linkText}`;
+    }
+  </script>
+
+</body>
+</html>
+```
+
+O código completo e testado está agora no arquivo acima. Você pode copiar o conteúdo para a pasta `debora-estetica-demo` no VS Code e publicá-la na Vercel seguindo o mesmo fluxo do repositório anterior.
